@@ -5,4 +5,29 @@ public class Cla {
 	private Jedi treinador;
 	private int anoFundacao;
 	private int anoExtincao;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Jedi getTreinador() {
+		return treinador;
+	}
+	public void setTreinador(Jedi treinador) {
+		this.treinador = treinador;
+	}
+	public int getAnoFundacao() {
+		return anoFundacao;
+	}
+	public void setAnoFundacao(int anoFundacao) {
+		this.anoFundacao = anoFundacao;
+	}
+	public int getAnoExtincao() {
+		return anoExtincao;
+	}
+	public void setAnoExtincao(int anoExtincao) {
+		this.anoExtincao = anoExtincao;
+	}
 }
