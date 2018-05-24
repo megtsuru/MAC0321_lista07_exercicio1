@@ -1,11 +1,11 @@
 package lista07.Isabella.Megumi.Q;
 
 public abstract class Ser {
-	private String nome;
-	private int anoNascimento;
-	private Planeta planetaNatal;
-	private String sexo;
-	private String espécie;
+	protected String nome;
+	protected int anoNascimento;
+	protected Planeta planetaNatal;
+	protected String sexo;
+	protected String especie;
 	
 	public String getNome() {
 		return nome;
@@ -31,10 +31,10 @@ public abstract class Ser {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public String getEspécie() {
-		return espécie;
+	public String getEspecie() {
+		return especie;
 	}
-	public void setEspécie(String espécie) {
-		this.espécie = espécie;
+	public void setEspecie(String especie) {
+		this.especie = especie;
 	}
 }

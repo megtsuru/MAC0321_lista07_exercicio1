@@ -1,7 +1,7 @@
 package lista07.Isabella.Megumi.Q;
 
-public class Cavaleiros {
-	private int anoAprovacaoCavaleiro;
+public class Cavaleiros extends Jedi {
+	protected int anoAprovacaoCavaleiro;
 
 	public int getAnoAprovacaoCavaleiro() {
 		return anoAprovacaoCavaleiro;

@@ -1,8 +1,8 @@
 package lista07.Isabella.Megumi.Q;
 
 public class Sith extends Ordem {
-	private String novoNome;
-	private double percentualRaiva;
+	protected String novoNome;
+	protected double percentualRaiva;
 	
 	public String getNovoNome() {
 		return novoNome;

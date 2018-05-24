@@ -6,7 +6,7 @@ public class Ordem extends Ser {
 	private boolean passouTesteCavaleiro;
 	private boolean telepatia;
 	private boolean telecinese;
-	private boolean persuasão;
+	private boolean persuasao;
 	
 	public String getPosicao() {
 		return posicao;
@@ -38,10 +38,10 @@ public class Ordem extends Ser {
 	public void setTelecinese(boolean telecinese) {
 		this.telecinese = telecinese;
 	}
-	public boolean isPersuasão() {
-		return persuasão;
+	public boolean isPersuasao() {
+		return persuasao;
 	}
-	public void setPersuasão(boolean persuasão) {
-		this.persuasão = persuasão;
+	public void setPersuasao(boolean persuasao) {
+		this.persuasao = persuasao;
 	}
 }

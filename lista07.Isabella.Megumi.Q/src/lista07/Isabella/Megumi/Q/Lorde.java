@@ -2,16 +2,33 @@ package lista07.Isabella.Megumi.Q;
 
 public class Lorde extends Sith {
 	private int campoVidencia;
-	private int quantidadeVida = 100;
-	private String dominioSabre;
+	private double quantidadeVida = 100.0;
+	private int dominioSabre; //vai de 0 a 10
+	private int dominioForca; //vai de 0 a 10
 	
-	public String getDominioSabre() {
-		return dominioSabre;
-	}
-	public void setDominioSabre(String dominioSabre) {
+	public Lorde(String nome, int dominioForca, int dominioSabre) {
+		this.nome = nome;
+		this.dominioForca = dominioForca;
 		this.dominioSabre = dominioSabre;
 	}
-	public int getQuantidadeVida() {
+	
+	public void setVidaPosDano(double dano) {
+		quantidadeVida -= dano;
+	}
+	
+	public int getDominioForca() {
+		return dominioForca;
+	}
+	public void setDominioForca(int dominioForca) {
+		this.dominioForca = dominioForca;
+	}
+	public int getDominioSabre() {
+		return dominioSabre;
+	}
+	public void setDominioSabre(int dominioSabre) {
+		this.dominioSabre = dominioSabre;
+	}
+	public double getQuantidadeVida() {
 		return quantidadeVida;
 	}
 	public void setQuantidadeVida(int quantidadeVida) {
