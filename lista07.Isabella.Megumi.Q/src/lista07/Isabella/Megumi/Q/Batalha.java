@@ -46,7 +46,7 @@ public class Batalha {
 		Lorde lordeSith = new Lorde(nome, dominioForca, dominioSabre);
 		System.out.println("\nNome: " + lordeSith.getNome() + "\nDominio da forca: " + lordeSith.getDominioForca() + "\nDominio do Sabre: " + lordeSith.getDominioSabre() + "\n");
 
-		while (mestreJedi.getQuantidadeVida() > 0 && lordeSith.getQuantidadeVida() > 0) {
+		while (true) {
 			System.out.println("----------- " + cont + " -----------");
 			
 			batalha.imprimeListaComandos();
@@ -57,7 +57,7 @@ public class Batalha {
 			System.out.println(lordeSith.getNome() + ", escolha sua skill (0 a 3): ");
 			skillLorde = keyboard.nextInt();
 			keyboard.nextLine();
-				
+			
 			if (skillMestre == skillLorde) {
 				//atencao: caso mesmo skill mesmo nivel -> usemos sorteio
 				int skill = skillMestre;
@@ -259,7 +259,7 @@ public class Batalha {
 
 class TesteBatalha {
 	public static void main(String[] args) {
-		Batalha oi = new Batalha();
-		oi.lutaMestreXLorde();
+		Batalha lendaria = new Batalha();
+		lendaria.lutaMestreXLorde();
 	}
 }
