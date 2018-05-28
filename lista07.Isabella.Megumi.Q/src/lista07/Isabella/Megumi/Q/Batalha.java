@@ -168,7 +168,6 @@ public class Batalha {
 						}
 					}
 				}
-				//caso em que jogadores escolhem habilidades diferentes
 				else {
 					if (mestreJedi.getDominioSabre() > lordeSith.getDominioSabre()) {
 						lordeSith.setVidaPosDano(dano[skill]*(1 + 0.1 * lordeSith.getDominioSabre()));
@@ -224,6 +223,7 @@ public class Batalha {
 					}
 				}
 			}
+			//caso em que jogadores escolhem habilidades diferentes
 			else if (skillMestre != skillLorde) {
 				if (skillMestre == 3 && (skillLorde == 1 || skillLorde == 2)) {
 					mestreJedi.setVidaPosDano(dano[skillLorde]*(1 + 0.1 * lordeSith.getDominioForca()));
